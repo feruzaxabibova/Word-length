@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container mt-3 align-items-center justify-content-center flex-column">
+        <form class="js-Form form-group flex-column align-items-center" action="POST">
+            <legend for="text" class="form-label w-75">Matn kiriting:</legend>
+            <textarea name="text" class="js-Textarea form-control my-4" id="text" cols="20" rows="10"></textarea>
+
+            <div class="my-2">
+                <button class="btn btn-success mx-1" type="submit">Submit</button>
+                <button class="js-deletewordBtn btn btn-danger mx-1" type="button">Delete words</button>
+            </div>
+        </form>
+
+        <p class="h4">Javoblar:</p>
+
+        <div class="js-result"></div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
